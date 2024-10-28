@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap 5.1 CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap 5.1 JS Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Bootstrap Practice</title>
+  </head>
+  <body>
+    <!-- Here we started studying the Gird system dealing with Rows and Columns using Bootstrap
+     The link is:  https://webprogrammingforappsandservices.sdds.ca/Bootstrap-UI-Implementation/bootstrap-introduction#grid-system -->
+     <div class="container">
+        <!-- Row e shidag kidzene -->
+        <div class="row">
+            <!-- Column e Row in meche, ya3ni kidzin mechi karagousinernen. -->
+            <div class="col-3">I am column 1 </div>
+            <div class="col-6">I am column 2</div>
+            <div class="col-9">I am column 3</div>
+            <div class="col-12">I am column 4</div>
+            <div class="col-15">I am column 5</div> <!-- col-15 doesn't exists -->
+
+            <!-- Notice how we did not have to specify the number of "columns", each div takes up (from a total of 12). 
+            Since we have only 2 columns in the above example, Bootstrap automatically assigns each column a width of "6"
+            (totaling 12 columns). If we wish to change this behaviour and have one of our columns shorter or longer than the other,
+            then we can use the familiar "column-counting" pattern, ie: -->
+
+            <!-- Those display on the width we mentioned but on page collapse which we chose md which means medium >=768
+            will display underneath of first column. -->
+            <div class="col-md-3">I am in column 1</div>
+            <div class="col-md-6">I am in column 2</div>
+        </div>
+     </div>
+    
+  </body>
+</html>

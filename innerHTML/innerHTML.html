@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHTML</title>
+    <script>
+        function changeTheText() {
+            // First, get the element by id
+            var divElement = document.getElementById('myDiv');
+
+            // Change it to innerHTML of Div to new heading and paragraph
+            divElement.innerHTML = "<h1>Hello From innerHTML</h1><p>You are now in innerHTML page.</p>";
+        }
+    </script>
+</head>
+<body>
+    <div id="myDiv">
+        <h1>Hello World!</h1>
+        <p>Welcome to Hello World Page.</p>
+    </div>
+    <button onclick="changeTheText()">Change to innerHTML</button>
+</body>
+</html>
